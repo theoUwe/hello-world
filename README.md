@@ -1,4 +1,4 @@
 # hello-world
 to refresh my GitHub knowledge - in particular the "GitHub Flow"
-- author: UWe
+- author: THEo
 - first change: 2025/04/16
