@@ -1,16 +1,16 @@
 #!/bin/bash
 # start with ./result_scala_aws_1_v04.sh --clusterid=8 
-# Parameter unter der Annahme von 3 Core Nodes
+# Parameter unter der Annahme von 6 Core Nodes
 # Master 1x c5.4xlarge: 16 vCore, 32 GiB memory
-# Core   3x c5.24xlarge: 96 vCore, 192 GiB memory
+# Core   6x c5.24xlarge: 96 vCore, 192 GiB memory
 set -x
 clusterid="0"
-num_executors=190
+num_executors=290
 spark_yarn_executor_memoryOverhead=2048
 executor_memory=8
 spark_yarn_driver_memoryOverhead=7168
 driver_memory=24
-executor_cores=5
+executor_cores=15
 driver_cores=5
 
 spark_dynamicAllocation_enabled="false"
