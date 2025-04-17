@@ -8,6 +8,7 @@ set -o pipefail  # don't hide errors within pipes
 sourceBucket=$1
 destinationBucket=$2
 kmsKeyId=$3
+projectName=$4
 projectFolder=dev_stage_${projectName}
 
 
