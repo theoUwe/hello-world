@@ -1,0 +1,18 @@
+#!/bin/bash
+# Bash Menu Script Example
+
+set -o errexit   # abort on nonzero exitstatus
+set -o nounset   # abort on unbound variable
+set -o pipefail  # don't hide errors within pipes
+
+sourceBucket=$1
+destinationBucket=$2
+kmsKeyId=$3
+projectFolder=dev_stage_${projectName}
+
+
+aws s3 sync \
+  "s3://${sourceBucket}/${projectFolder}/raw/" \
+  "s3://${destinationBucket}/${projectFolder}/raw/" \
+   --sse aws:kms \
+   --sse-kms-key-id ${kmsKeyId}
