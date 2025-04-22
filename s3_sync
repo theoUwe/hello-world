@@ -1,5 +1,6 @@
 #!/bin/bash
 # Bash Menu Script Example
+# update time: 2025/01/20
 
 set -o errexit   # abort on nonzero exitstatus
 set -o nounset   # abort on unbound variable
