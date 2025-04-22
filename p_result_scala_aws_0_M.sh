@@ -7,7 +7,7 @@ set -x
 clusterid="0"
 num_executors=290
 spark_yarn_executor_memoryOverhead=2048
-executor_memory=8
+executor_memory=12
 spark_yarn_driver_memoryOverhead=7168
 driver_memory=24
 executor_cores=15
